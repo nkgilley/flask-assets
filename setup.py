@@ -1,11 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 """
-Flask-Assets
+Flask-Assets2
 -------------
 
 Integrates the ``webassets`` library with Flask, adding support for
 merging, minifying and compiling CSS and Javascript files.
+
+Updates the seemingly abandoned Flask-Assets project for Flask>=2.3
 """
 
 from __future__ import with_statement
@@ -32,9 +34,9 @@ version = parse_version('__version__')
 webassets_requirement = parse_version('__webassets_version__')
 
 setup(
-    name='Flask-Assets',
+    name='Flask-Assets2',
     version=version,
-    url='http://github.com/miracle2k/flask-assets',
+    url='http://github.com/nkgilley/flask-assets2',
     license='BSD',
     author='Michael Elsdoerfer',
     author_email='michael@elsdoerfer.com',
@@ -51,7 +53,7 @@ setup(
         ],
     },
     install_requires=[
-        'Flask>=0.8',
+        'Flask>=2.3',
         'webassets%s' % webassets_requirement,
     ],
     classifiers=[
